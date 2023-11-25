@@ -1,0 +1,67 @@
+/* style.css */
+
+/* Variáveis */
+:root {
+    --cor-fundo: #F0F4FF;
+    --cor-primaria: #00A789;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Ajuste conforme necessário */
+    border-radius: 0.98669rem;
+    background-color: white;
+    box-shadow: 0px 3.94684px 8.88039px 0px rgba(255, 255, 255, 0.19), 0px 0px 1.97342px 0px rgba(255, 255, 255, 0.20);
+    margin: 1.22rem;
+}
+
+.logo {
+    padding-right: 50%; /* Remova o padding padrão */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura da barra de navegação */
+}
+
+/* links de navegacao para outras paginas */
+.links {
+    margin-left: 8rem;/* Ajuste conforme necessário para espaçamento entre os links */
+    padding: 0px 23px;
+}
+
+.links .links-items:nth-child(1) { /* Seleciona o primeiro elemento e deixa ele verde */
+    color: var(--cor-primaria);
+}
+
+.links-items {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* botões */
+.botao {
+    padding: 4px 53px;
+}
+
+.botao-signin {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+.botao-login {
+    margin-right: 1rem;
+    background-color: var(--cor-primaria);
+}
+
+
+
+
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+}
