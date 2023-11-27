@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotine</title>
     <!-- <link rel="shortcut icon" href="./src/imagens/Logos/Favicon.svg" type="image/x-icon"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style/grid-flex/index.css">
@@ -14,13 +16,14 @@
     <link rel="stylesheet" href="./src/style/grid-flex/cartao.css">
     <link rel="stylesheet" href="./src/style/grid-flex/navbar.css">
     <link rel="stylesheet" href="./src/style/base.css">
-    <link rel="stylesheet" href="./src/style/responsivo.css">
+    <link rel="stylesheet" href="./src/style/responsivo.css">    
 </head>
 
 <body>
 
     <header class="cabecalho container">
         <a href="#"><img class="cabecalho__logo" src="./assets/Logo.svg" alt="Logo Rotine"></a>
+        <button class="cabecalho__botao" id="voltar_para_explorar"><img src="./src/imagens/Icones/seta-voltar.svg" alt="Seta voltar"></button>
     </header>
 
     <aside class="menu-lateral">
@@ -34,7 +37,7 @@
                 <li class="menu-lateral__link"><button aria-label="Botão acessar sua biblioteca"><img src="./src/imagens/Icones/Settings gear.svg" alt="Logo da engrenagem das configurações">Configurações</button></li>
             </ul>
 
-            <!-- <script>
+            <script>
                 var home = document.getElementById('home');
 
                 home.addEventListener('click', function () {
@@ -44,39 +47,35 @@
                     // Navega para a nova página
                     window.location.href = novaPagina;
                 });
-            </script> -->
+            </script>
         </nav>
     </aside>
     <main class="principal container">
-        <section class="secao secao-vertical d-flex justify-content-evenly flex-wrap"> 
+        <section class="secao secao-vertical">
             <h2 class="secao__titulo">Explorar</h2>
+            <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre Hipsters Ponto Tech">Ver mais</a>
             <ul class="secao__cartoes">
                 <li>
-                <!-- <li class="cartao"> -->
-                    <a href="receitas-explorar.html">
-                        <img class="cartao__imagem" src="./assets/Receitas_com_titulo.png" alt="Imagem de Receitas">
-                        <!-- <h1>Receitas</h1> -->
-                    </a>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/ReceitasCarrousel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a href="exercicios-explorar.html">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </a>
+                      </div>
                 </li>
-                <li>
-                <!-- <li class="cartao"> -->
-                    <a href="exercicios-explorar.html">
-                        <img class="cartao__imagem" src="./assets/Exercicios_com_titulo.png" alt="Imagem de Exercícios">
-                        <!-- <h1>Exercícios</h1> -->
-                    </a>
-                </li>
-                <li>
-                <!-- <li class="cartao"> -->
-                    <a href="artigos-explorar.html">
-                        <img class="cartao__imagem" src="./assets/Artigos_com_titulo.png" alt="Imagem de Artigos">
-                        <!-- <h1>Artigos</h1> -->
-                    </a>
-                </li>
-                <!-- <li>
-                    <a href="#">
-                        <img class="cartao__imagem" src="./assets/AdicionarAmigos.png" alt="Imagem de Adicionar Amigos">
-                    </a>
-                </li> -->
             </ul>
         </section>
     </main>
